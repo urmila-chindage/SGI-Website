@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400;700&family=Monoton&display=swap");
+
+.photogallery-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-image: url(../../../Images/course-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px 0px;
+}
+/* width */
+.galleryWrap::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.galleryWrap::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 3px grey; 
+  border-radius: 5px;
+}
+ 
+/* Handle */
+.galleryWrap::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.galleryWrap::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+.photo-section{
+  background-color: rgba(300,300,300,0.10);
+  border-radius: 5%;
+}
+/*.photo-section:hover{
+  transform: scale(1.02);
+}*/
+.galleryWrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    max-height:350px;
+    overflow-y: scroll;
+   }
+  .title-section h4 {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight:700;
+    color:#ff3c38;
+}
+
+  .galleryWrap .single {
+    width: 200px;
+    cursor: pointer;
+  }
+  
+  
+  .galleryWrap .single img {
+    max-width: 100%;
+  }
+  
+  .single img:hover {
+    background-color: rgba(242,242,242,0.88);
+    
+  }
+  .sliderWrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .sliderWrap .btnClose, .sliderWrap .btnPrev, .sliderWrap .btnNext {
+    position: fixed;
+    cursor: pointer;
+    opacity: 0.6;
+    color: #fff;
+    z-index: 9999;
+  }
+  
+  .btnNext:hover, .btnPrev:hover, .btnClose:hover {
+    opacity: 1;
+  }
+  
+  .sliderWrap .btnClose {
+    top: 40px;
+    right: 40px;
+  }
+  
+  .sliderWrap .btnPrev {
+    top: 50%;
+    transform: translateY(-50%);
+    left: 40px;
+  }
+  
+  .sliderWrap .btnNext {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+  }
+  
+  .fullScreenImage {
+    width: calc(100% - 40px);
+    height: calc(100% - 40px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .fullScreenImage img {
+    max-width: 100%;
+    max-height: 100%;
+    pointer-events: none;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */  
+  }
+  .testimonial-section{
+    background-color: rgba(300,300,300,0.10);
+    border-radius: 5%;
+  }
+  .testimonial-section:hover{
+    transform: scale(1.02);
+  }
+
+  .profile-image{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    margin-top:20px;
+}
+.testimonial-content{
+   margin-top:20px;
+}
+.testimonial-content h6{
+    font-size: 18px;
+    font-weight:700;
+    color:#fff;
+    font-family: "Bellota Text", "cursive";
+}
+.testimonial-content p{
+    font-size: 12px;
+    line-height:1rem;
+    color:#fff;
+    font-family: "Bellota Text", "cursive";
+}
+.carousel-inner{
+    max-width:80%;
+    margin:0px auto;
+}
