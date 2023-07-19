@@ -1,24 +1,61 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import { BrowserRouter as Router,Routes,Route,HashRouter } from "react-router-dom";
+import Home from "./Screens/Home/Home";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCircleXmark,
+} from "@fortawesome/free-solid-svg-icons";
+
 
 function App() {
+
+  const [isModalOpen, setIsModalOpen] = useState(true);
+  const [modalData, setModalData] = useState({
+    imageURL: "",
+    moreInfoURL: "",
+  });
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router basename="/">
+    <div
+    className={isModalOpen ? "modal" : "modal closed-modal"}
+    id="modal"
+    onClick={(e) => {
+      setIsModalOpen(false);
+      e.stopPropagation();
+    }}
+  >
+    <div
+      className="modal-content"
+      onClick={(e) => {
+        e.stopPropagation();
+      }}
+    >
+      <div className="close-btn" onClick={closeModal}>
+        <button className="btn btn-danger p-2">
+        <FontAwesomeIcon icon={faCircleXmark} />
+        </button>
+      </div>
+      <img
+        src={require("./Images/Modal/SGI-Ad.jpg")}
+        alt="modal"
+        className="modal-img img-fluid"
+      />
     </div>
+  </div>
+
+  
+      <Routes>
+          <Route exact path="/" element={<Home/>} />
+      </Routes>
+    </Router>
+
+  
   );
 }
 
