@@ -6,6 +6,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCircleXmark,
 } from "@fortawesome/free-solid-svg-icons";
+import StudentLogin from "./Screens/LoginandRegistration/Student/StudentLogin";
 
 
 function App() {
@@ -52,6 +53,7 @@ function App() {
   
       <Routes>
           <Route exact path="/" element={<Home/>} />
+          <Route exact path="/student" element={<StudentLogin/>} />
       </Routes>
     </Router>
 

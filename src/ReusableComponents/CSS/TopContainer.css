@@ -1,11 +1,11 @@
-.Top-container{
+.top-container{
     background-color : #002147;
 }
-.ed-com-t1-left ul li{
+.top-container-left ul li{
     float:left;
     display: inline-block;
 }
-.ed-com-t1-left ul li a{
+.top-container-left ul li a{
     color: #a3adb9;
     padding: 5px 14px;
     line-height: 30px;
@@ -17,50 +17,50 @@ ul:not(.browser-default){
     list-style-type: none;
     margin-bottom: 0px;
 }
-.ed-com-t1-right{
+.top-container-right{
     float:right;
 }
-.ed-com-t1-right ul li{
-    float:left;
+.top-container-right ul li{
+    float:right;
     display: inline-block;
 }
-.ed-com-t1-right ul li:nth-child(1) a{
+.top-container-right ul li:nth-child(1) a{
     background: #e66030;
 }
-.ed-com-t1-right ul li a{
+.top-container-right ul li a{
     color: #fff;
     padding: 7px 12px;
     line-height: 30px;
     font-size: 12px;
 }
-.ed-com-t1-right ul li:nth-child(2) a{
+.top-container-right ul li:nth-child(2) a{
     background: #013673;
 }
-.ed-com-t1-right ul li a{
+.top-container-right ul li a{
     color: #fff;
     padding: 7px 12px;
     line-height: 30px;
     font-size: 12px;
 }
-.ed-com-t1-social{
+.top-container-social{
     position: relative;
     overflow: hidden;
     margin-top: -5px;
     float: right;
     margin-right: 25px
 }
-.ed-com-t1-social ul li{
+.top-container-social ul li{
     float:left;
 }
-.ed-com-t1-social ul li a{
-    line-height:26px;
+.top-container-social ul li a{
+    line-height:20px;
 }
-.ed-com-t1-social ul li a i{
-    width: 30px;
-    height: 30px;
+.top-container-social ul li a .font-icon{
+    width: 15px;
+    height: 15px;
     /* background: #013673; */
     color: #92a5bb;
-    padding: 12px 4px;
+    padding: 12px 0px 0px 15px;
     text-align: center;
     border-right: 1px solid #002147;
 }

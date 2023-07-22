@@ -1,13 +1,21 @@
 import React from "react";
 import "../CSS/TopContainer.css";
+import {Link} from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookF,
+  faSquareTwitter,
+  faInstagram,
+  faYoutube,
+} from "@fortawesome/free-brands-svg-icons";
 
 const TopContainer = () => {
   return (
-    <div className="Top-container">
+    <div className="top-container">
     <div className="container">
       <div className="row">
         <div className="col-md-12">
-          <div className="ed-com-t1-left">
+          <div className="top-container-left">
             <ul>
               <li>
                 <a href="#">
@@ -19,43 +27,53 @@ const TopContainer = () => {
               </li>
             </ul>
           </div>
-          <div className="ed-com-t1-right">
+          <div className="top-container-right">
             <ul>
               <li>
-                <a href="#!" data-toggle="modal" data-target="#modal1">
-                  Sign In
-                </a>
+                <Link to="staff">
+                   Staff Login
+                </Link>
               </li>
               <li>
-                <a href="#!" data-toggle="modal" data-target="#modal2">
-                  Sign Up
-                </a>
+                <Link to="student">
+                  Student Login
+                </Link>
               </li>
             </ul>
           </div>
-          <div className="ed-com-t1-social">
+          <div className="top-container-social">
             <ul>
               <li>
-                <a href="#">
-                  <i className="fa fa-facebook" aria-hidden="true"></i>
-                </a>
+              <Link className="btn-floating btn-fb" to="/facebook">
+                  <FontAwesomeIcon
+                    icon={faFacebookF}
+                    className="font-icon"
+                  />
+                </Link>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa fa-google-plus" aria-hidden="true"></i>
-                </a>
+              <Link className="btn-floating btn-fb" to="/twitter">
+                  <FontAwesomeIcon
+                    icon={faSquareTwitter}
+                    className="font-icon"
+                  />
+                </Link>
               </li>
               <li>
-                <a href="#">
-                  <i className="fa fa-twitter" aria-hidden="true"></i>
-                </a>
+              <Link className="btn-floating btn-fb" to="/facebook">
+                  <FontAwesomeIcon
+                    icon={faInstagram}
+                    className="font-icon"
+                  />
+                </Link>
               </li>
             </ul>
+          </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
+  
   );
 };
 

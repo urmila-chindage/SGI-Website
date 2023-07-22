@@ -15,7 +15,7 @@ const NewsLetter = () => {
     <section id="subscribe">
       <div className="container subscribe" data-aos="fade-up">
       <h4>Subscribe now!</h4>
-        <form>
+        <form className="newsletter-form">
           <div className="form-control form-container">
             <input type="email"
                   name="email"

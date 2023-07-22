@@ -17,7 +17,7 @@ section#subscribe {
     color:#ff3c38
   }
   
-  form > * {
+  .newsletter-form > * {
     width: 100%;
     max-width: 50rem;
     margin: 3rem auto;
@@ -26,7 +26,7 @@ section#subscribe {
     background: transparent;
     border: 1px solid transparent;
   }
-  form input {
+  .newsletter-form input {
     padding: 1rem;
     background: transparent;
     border: 1px solid #777;
@@ -37,7 +37,7 @@ section#subscribe {
     font-size: 1rem;
   }
   
-  form button {
+  .newsletter-form button {
     padding: 1rem;
     background: #ff3c38;
     border: 1px solid #ff3c38;
@@ -47,16 +47,16 @@ section#subscribe {
     font-weight: 500;
     transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
   }
-  form button:hover {
+  .newsletter-form button:hover {
     box-shadow: inset 0 0 1.5em 1.5em #fff;
     color:#000;
   }
-  form button:focus {
+  .newsletter-form button:focus {
     outline: none;
   }
 
   @media screen and (max-width: 600px) {
-    form input {
+    .newsletter-form input {
       width: 60%;
     }
   }
