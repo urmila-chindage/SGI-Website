@@ -1,0 +1,11 @@
+.map-box {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.gmap_iframe {
+  height: 350px !important;
+
+}

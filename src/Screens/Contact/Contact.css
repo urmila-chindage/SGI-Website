@@ -1,0 +1,19 @@
+.bg-img{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5))
+}
+.input-box{
+    display: block;
+    width: 90%;
+    margin: 20px
+}
+
+.title{
+    display: block;
+    /* width: 90%; */
+    margin:20px;
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #ff3c38;
+}

@@ -1,0 +1,86 @@
+
+.marquee-container{
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    padding: 30px;
+    width: 100%;
+}
+.newsSection{
+    background: url(../../../Images/shape-bg.png);
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:50px 0px;
+}
+.latest-news-section ul li{
+    border-bottom: 1px dashed #000;
+    padding: 15px 0px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 250ms;
+}
+.latest-news-section ul li:hover{
+    transform: translateY(-10px);
+}
+
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight:700;
+    color:#ff3c38;
+}
+
+.news-date{
+    border-radius: 3px;
+    display: inline-block;
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 0;
+    margin-right: 20px;
+    text-transform: uppercase;
+    width: 20%;
+    background: #002147;
+}
+.news-date span:first-child{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 0px;
+    line-height: 25px;
+    color: #fff;
+}
+.news-date span:last-child{
+    font-size: 12px;
+    color: #fff;
+}
+.news-link{
+    float: left;
+    width: 60%;
+}
+.news-link a{
+    color:#000;
+}
+.news-link a h4{
+    color: #000;
+    padding-bottom: 5px;
+    margin-bottom: 3px;
+    border-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+    letter-spacing: 0px; 
+}
+.news-link p{
+    color: #203245;
+    margin-bottom: 0px;
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+}
+.news-link span{
+    color: #959595;
+    font-size: 12px;
+    font-weight: 500;
+} 

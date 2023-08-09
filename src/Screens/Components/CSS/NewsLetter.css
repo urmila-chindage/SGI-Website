@@ -1,0 +1,66 @@
+
+section#subscribe {
+    background: url(../../../Images/subscribe-bg.png);
+    text-align: center;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+    padding:30px 0px;
+  }
+  
+  .subscribe h4 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 1.5rem 0;
+    padding-bottom: 1rem;
+    color:#ff3c38
+  }
+  
+  .newsletter-form > * {
+    width: 100%;
+    max-width: 50rem;
+    margin: 3rem auto;
+  }
+  .form-container{
+    background: transparent;
+    border: 1px solid transparent;
+  }
+  .newsletter-form input {
+    padding: 1rem;
+    background: transparent;
+    border: 1px solid #777;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    outline: none;
+    width: 80%;
+    font-size: 1rem;
+  }
+  
+  .newsletter-form button {
+    padding: 1rem;
+    background: #ff3c38;
+    border: 1px solid #ff3c38;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+  }
+  .newsletter-form button:hover {
+    box-shadow: inset 0 0 1.5em 1.5em #fff;
+    color:#000;
+  }
+  .newsletter-form button:focus {
+    outline: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .newsletter-form input {
+      width: 100%;
+      border-radius: 5px 5px 5px 5px;
+    }
+    .newsletter-form button{
+      margin-top:10px;
+    }
+  }

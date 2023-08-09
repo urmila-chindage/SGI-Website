@@ -1,0 +1,37 @@
+.navbar > .nav > .nav-link {
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+  }
+  .navbar > .nav > .active,
+  .navbar > .nav > .active > a:hover,
+  .navbar > .nav > .active > a:focus {
+    color: #fff;
+    background:#ec1f25;
+    font-family: 'Raleway', sans-serif;
+    border-radius:0px;
+  }
+  
+  .DeptHeading{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: larger;
+    text-align: center;
+    background: #002147;
+    width: 100%;
+    color: #fff;
+    padding: 20px;
+    font-family: 'Raleway', sans-serif;
+  }
+  .menubar-wrapper{
+    border:2px dotted #002147;
+  }
+  .navbar{
+    padding:0px;
+  }
+  .nav-pills-wrapper{
+    width: 100%;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom:10px;
+  }
+  

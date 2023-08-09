@@ -1,0 +1,31 @@
+.tabs {
+    display: flex;
+    border: 1px solid #dcdcdc;
+    margin-top:40px;
+}
+.tabs li {
+  display: block;
+  padding: 10px 23px;
+  background: #fff;
+  cursor: pointer;
+  border-right: 1px solid #dcdcdc;
+  font-family: 'Raleway', sans-serif;
+}
+.tabs li.active {
+    color: #fff;
+    background:#002147;
+}
+.tab_content {
+    padding: 10px;
+    background: #dcdcdc;
+    margin-top: 40px;
+    border-radius: 5px;
+   text-align:left;
+   font-family: 'Raleway', sans-serif;
+}
+.tab_panel ul li{
+  margin-top:10px;
+  list-style: disc;
+  margin-left: 35px;
+  font-family: 'Raleway', sans-serif;
+}

@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+
+.counter {
+    position: relative;
+    height: 100%;
+    padding: 3% 1%;
+    background-image: url(../../../Images/counter-bg.jpg);
+    text-align: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.counter .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    opacity: .95;
+    background: #1b212c; 
+}
+ 
+  .counter .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .counter .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    background:rgba(242,242,242,0.88); 
+  }
+  .counter .counter-wrapper {
+    font-size: 44px;
+    display: block;
+    color: #000;
+    font-family: 'Raleway', sans-serif;
+    width: 100%;
+    font-weight: 400;
+}
+  .counter .counter-label {
+    color: #000;
+    font-size: 18px;
+    display: block;
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+  }
+  .counter .icon svg {
+    width:70px;
+    height:70px;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .counter .counter-wrapper{
+      font-size:18px;
+    }
+    .counter .counter-label{
+      font-size:14px;
+    }
+  }
+  
+  @media screen and (max-width: 576px) {
+    .animate-box{
+      margin-bottom:20px
+    }
+    
+  }
+  
+  

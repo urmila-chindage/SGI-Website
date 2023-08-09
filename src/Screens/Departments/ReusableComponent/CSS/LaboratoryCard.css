@@ -1,0 +1,42 @@
+.accordion-heading-wrapper{
+    width:100%;
+    height:50%;
+    background: #002147;
+    color:#fff;
+    padding:15px 0px;
+    display:flex;
+   justify-content: center;
+}
+.accordion-heading-wrapper h5{
+    width:70%;
+}
+
+.lab-description{
+    font-family: 'Raleway', sans-serif;
+    font-size: 15px;
+}
+.lab-photo{
+    width:100%;
+    height:300px;
+}
+.lab-info{
+    font-family: 'Raleway', sans-serif;
+    color:#000;
+    font-weight:700;
+}
+.lab-detail-btn{
+    font-family: 'Raleway', sans-serif;
+    font-weight:700;
+    width:50%;
+    text-align:center;
+    background:#ec1f25;
+    color:#000;
+    padding: 10px;
+    border: 1px solid #ec1f25;
+    border-radius: 10px;
+    transition: box-shadow 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+.lab-detail-btn:hover{
+    box-shadow: inset 0 0 1.5em 1.5em #fff;
+    color:#000;
+}
